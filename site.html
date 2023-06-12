@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h1 {
+            font-size: 50px;
+            color: #E7BF70;
+        }
+        p, h2, label {
+            color: #E7BF70;
+        }
+        #div-id-1 {
+            color: white;
+        }
+    </style>
+</head>
+<body style="background-color: #2B2B2B">
+    <h1 align="center">Ajax</h1>
+    <h2>Асихронность.</h2>
+    <p>Запросы которые совершает Ajax не оснавливают работу сайта. Во время отправки
+        запроса, пользовать может параллельно работать с сайтом, не ожидая завершения</p>
+    <hr>
+
+    <label for="input-url">Введите url api:</label>
+    <input type="text" id="input-url" size="50">
+
+    <label for="input-args">Введите args:</label>
+    <input type="text" id="input-args" size="50">
+
+    <button onclick="GetData()">Get Data</button>
+
+    <p></p>
+
+    <img id="loading_image" src="Loading_icon.gif" alt="loading_icon" hidden>
+    <div id="div-id-1" style="border: 2px solid black;">
+    </div>
+
+
+    <script type="text/javascript" src="script.js">
+    </script>
+</body>
+</html>
